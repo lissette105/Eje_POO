@@ -1,21 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package github_poo;
 
-/**
- *
- * @author lisse
- */
+package github_poo;
+import java.util.*;
 public class Github_POO {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         System.out.println("Hola grupo de POO");
+        Scanner a = new Scanner(System.in);
+        System.out.println("Ingresa tu nombre completo");
+        String nombre= a.nextLine();
+        
+        String[] iniciales= nombre.split(" ");
+        System.out.println("Iniciales: ");
+        for(int i=0; i<iniciales.length; i++){
+            System.out.print(iniciales[i].charAt(0)+" ");
+        }
     }
     
 }
